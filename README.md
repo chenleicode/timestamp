@@ -19,3 +19,16 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## 部署到 GitHub Pages
+
+仓库已包含 GitHub Actions 工作流：
+
+- 推送到 `main` 分支后自动构建并部署
+- 部署产物来自 `dist/`
+- Vite 会在 GitHub Actions 中自动使用仓库名作为 Pages 基路径
+
+首次启用时需要在 GitHub 仓库设置中确认：
+
+1. 打开 `Settings -> Pages`
+2. 在 `Build and deployment` 中将 `Source` 设置为 `GitHub Actions`
